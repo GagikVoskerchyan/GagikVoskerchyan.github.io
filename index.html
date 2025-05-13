@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gagik Voskerchyan - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <section class="sidebar-header">
+            <a href="#" onclick="showSection('home')">
+                <img src="img/logo.png" alt="GV Logo" class="logo">
+            </a>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#" onclick="showSection('about')"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#" onclick="showSection('portfolio')"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="#" onclick="showSection('services')"><i class="fas fa-cogs"></i> Services</a></li>
+                <li><a href="#" onclick="showSection('contact')"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <section id="home" class="section active">
+            <div class="profile-pic">
+                <img src="img/me.jpeg" alt="Gagik Voskerchyan">
+            </div>
+            <h1>Gagik Voskerchyan</h1>
+            <p class="title">I am a Developer</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/gagik.voskerchyan" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/gago_vos/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/gagik-voskerchyan-329920237/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/GagikVoskerchyan" target="_blank"><i class="fab fa-github"></i></a> 
+            </div>
+        </section>
+
+<section id="about" class="section">
+    <h1 class="about-title">About Me</h1>
+    
+    <p class="about-summary">
+        Hello, My name is <b>Gagik Voskerchyan</b>. I am a passionate developer with a background in Computer Science. 
+        I graduated from LaSalle College in Montreal, where I honed my skills in web development, 
+        software engineering, and creative design. My goal is to build innovative and user-friendly applications.
+    </p>
+
+    <div class="about-grid">
+        <div class="about-column">
+            <p><strong>Birthday:</strong> June 11, 2000</p>
+            <p><strong>Degree:</strong> Computer Science</p>
+            <p><strong>Email:</strong> gagikvoskerchyan@gmail.com</p>
+        </div>
+        <div class="about-column">
+            <p><strong>Age:</strong> 25</p>
+            <p><strong>Location:</strong> Montreal, Canada</p>
+            <p><strong>Phone:</strong> +1 (438) 994 4424</p>
+        </div>
+    </div>
+
+<div class="skills-grid">
+    <div class="skills-column">
+        <h3>Technical Skills</h3>
+        <p><strong>Tools:</strong> .NET Core, ASP.NET Core, Entity Framework, ASP.NET MVC, Xamarin, React.js, Angular, Vue.js, Node.js, Express.js, jQuery, TypeScript, Django, Bootstrap 5, Crispy Forms, Django ORM, Flask </p>
+        <p><strong>Languages:</strong> C#, JavaScript, Python, HTML5, CSS3</p>
+        <p><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, SQLite</p>
+    </div>
+    <div class="skills-column">
+        <h3>Development Practices</h3>
+        <p><strong>Architecture:</strong> MVC Pattern, Template Inheritance</p>
+        <p><strong>Methodologies:</strong> Agile mindset, Scrum framework, Kanban workflows, Sprint planning, Retrospectives</p>
+        <p><strong>Tools:</strong>  VS Code, Git, GitHub, Jira, Collaboration & teamwork, Backlog refinement</p>
+    </div>
+</div>
+
+    <div class="cv-download">
+        <a href="cv/Resume_Gagik_Voskerchyan.pdf" download class="btn-cv">Download CV</a>
+    </div>
+
+    <h2 class="education-title">Education</h2>
+    <div class="education-container">
+        <div class="education-box">
+            <p class="year">2021 - 2024</p>
+            <h3>LaSalle College, Montreal</h3>
+            <p>Graduated with a degree in Computer Science, focusing on web development, 
+               software engineering, and creative design.</p>
+        </div>
+
+        <div class="education-box">
+            <p class="year">2016 - 2018</p>
+            <h3>High School Name</h3>
+            <p>Completed high school with a strong foundation in mathematics and problem-solving.</p>
+        </div>
+    </div>
+</section>
+
+        <section id="portfolio" class="section">
+            <h2 class="section-title">My Projects</h2>
+            <div class="portfolio-container">
+        
+                <div class="project-card">
+                    <h3 class="project-title">MCExpress Website</h3>
+                    <div class="project-carousel" id="project2">
+                        <img src="project_MCExpress_img/MC1.png" alt="MCExpress - 1" class="carousel-img active">
+                        <img src="project_MCExpress_img/MC2.png" alt="MCExpress - 2" class="carousel-img">
+                        <img src="project_MCExpress_img/MC3.png" alt="MCExpress - 3" class="carousel-img">
+                        <img src="project_MCExpress_img/MC4.png" alt="MCExpress - 3" class="carousel-img">
+                    </div>
+                    <div class="carousel-controls">
+                        <button onclick="prevSlide('project2')">&#10094;</button>
+                        <button onclick="nextSlide('project2')">&#10095;</button>
+                    </div>
+                    <a href="https://github.com/GagikVoskerchyan/MCExpress_Website" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">Job Board Website</h3>
+                    <div class="project-carousel" id="project3">
+                        <img src="project_JobBoard_img/BrowseJob.png" alt="Job Board - 1" class="carousel-img active">
+                        <img src="project_JobBoard_img/EmployerProfile.png" alt="Job Board - 2" class="carousel-img">
+                        <img src="project_JobBoard_img/PostJob.png" alt="Job Board - 3" class="carousel-img">
+                        <img src="project_JobBoard_img/SeekerProfile.png" alt="Job Board - 4" class="carousel-img">
+                        <img src="project_JobBoard_img/AppliedJobs.png" alt="Job Board - 5" class="carousel-img">
+                        <img src="project_JobBoard_img/Inbox.png" alt="Job Board - 6" class="carousel-img">
+                        <img src="project_JobBoard_img/SentMessage.png" alt="Job Board - 6" class="carousel-img">
+                        <img src="project_JobBoard_img/SavedJobs.png" alt="Job Board - 6" class="carousel-img">
+                        <img src="project_JobBoard_img/Login.png" alt="Job Board - 6" class="carousel-img">
+                        <img src="project_JobBoard_img/Register.png" alt="Job Board - 6" class="carousel-img">
+                    </div>
+                    <div class="carousel-controls">
+                        <button onclick="prevSlide('project3')">&#10094;</button>
+                        <button onclick="nextSlide('project3')">&#10095;</button>
+                    </div>
+                    <a href="https://github.com/GagikVoskerchyan/JobBoard_Website" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+        
+        
+            </div>
+        </section>
+
+<section id="services" class="section">
+    <h1 class="services-title">Services</h1>
+    <div class="services-container">
+        <div class="service-box">
+            <i class="fas fa-code"></i>
+            <h3>Web Development</h3>
+            <p>I build responsive and dynamic websites using modern technologies.</p>
+        </div>
+
+        <div class="service-box">
+            <i class="fas fa-paint-brush"></i>
+            <h3>UI/UX Design</h3>
+            <p>Crafting visually appealing and user-friendly interfaces.</p>
+        </div>
+
+        <div class="service-box">
+            <i class="fas fa-shopping-cart"></i>
+            <h3>E-commerce Solutions</h3>
+            <p>Building secure and scalable online stores for your business.</p>
+        </div>
+
+        <div class="service-box">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>App Development</h3>
+            <p>Creating user-centric mobile applications with intuitive designs.</p>
+        </div>
+
+        <div class="service-box">
+            <i class="fas fa-server"></i>
+            <h3>Backend Development</h3>
+            <p>Building reliable and efficient server-side applications.</p>
+        </div>
+
+        <div class="service-box">
+            <i class="fas fa-search"></i>
+            <h3>SEO Optimization</h3>
+            <p>Optimizing websites to rank higher on search engines.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h1 class="contact-title">Contact Me</h1>
+    <div class="contact-container">
+        <div class="contact-box">
+            <i class="fas fa-phone-alt"></i>
+            <h3>Call Me</h3>
+            <p>+1 (438) 994 4424</p>
+        </div>
+
+        <div class="contact-box">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Location</h3>
+            <p>Montreal, Canada</p>
+        </div>
+
+        <div class="contact-box">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p>gagikvoskerchyan@gmail.com</p>
+        </div>
+    </div>
+</section>
+
+
+    <script>
+ function showSection(sectionId) {
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => {
+        section.classList.remove('active'); 
+    });
+
+    const targetSection = document.getElementById(sectionId);
+    targetSection.classList.add('active');
+
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+function nextSlide(projectId) {
+    const slides = document.querySelectorAll(`#${projectId} .carousel-img`);
+    let currentIndex = Array.from(slides).findIndex((img) => img.classList.contains('active'));
+
+    slides[currentIndex].classList.remove('active');
+    const nextIndex = (currentIndex + 1) % slides.length;
+    slides[nextIndex].classList.add('active');
+}
+
+function prevSlide(projectId) {
+    const slides = document.querySelectorAll(`#${projectId} .carousel-img`);
+    let currentIndex = Array.from(slides).findIndex((img) => img.classList.contains('active'));
+
+    slides[currentIndex].classList.remove('active');
+    const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+    slides[prevIndex].classList.add('active');
+}
+    </script>
+
+</body>
+</html>
